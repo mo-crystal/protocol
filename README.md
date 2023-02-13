@@ -159,7 +159,7 @@ S -> C
 
 调用 `GC` 对所有连接的 `lastAccept` 检测，对于过长时间未进行操作的连接进行资源回收，释放连接。
 
-# Pyrites
+# Implements
 
 [Pyrites(Go)](https://github.com/mo-crystal/Pyrite)
 
