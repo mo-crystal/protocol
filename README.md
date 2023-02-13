@@ -80,8 +80,6 @@ Sequence
 Body
 ```
 
-
-
 **握手阶段**
 
 ```go
@@ -109,8 +107,6 @@ C -> S
 
 握手阶段双方各自记录相应的 rtt，用于后期处理超时问题。
 
-
-
 **请求流程**
 
 ```go
@@ -134,8 +130,6 @@ Receiver -> Sender
 重传三次后仍未收到 ack 答复，则判定为不可达，并向上层反应错误，等待上层处理。
 
 Receiver 收到重复数据包时，直接返回 ack 并不做任何处理。
-
-
 
 **保活流程**
 
@@ -161,16 +155,12 @@ S -> C
 
 服务端的连接将由 `GC` 进行回收。
 
-
-
 **资源回收**
 
 调用 `GC` 对所有连接的 `lastAccept` 检测，对于过长时间未进行操作的连接进行资源回收，释放连接。
 
-
-
 # Pyrites
 
-[Pyrites(Go)]([GitHub - mo-crystal/Pyrite](https://github.com/mo-crystal/Pyrite))
+[Pyrites(Go)](https://github.com/mo-crystal/Pyrite)
 
-[Pyrites(Cpp)]([GitHub - mo-crystal/Pyrite-cpp](https://github.com/mo-crystal/Pyrite-cpp))
+[Pyrites(Cpp)](https://github.com/mo-crystal/Pyrite-cpp)
