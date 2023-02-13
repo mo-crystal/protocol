@@ -161,6 +161,6 @@ S -> C
 
 # Implements
 
-[Pyrites(Go)](https://github.com/mo-crystal/Pyrite)
+[Pyrite (Go)](https://github.com/mo-crystal/Pyrite)
 
-[Pyrites(Cpp)](https://github.com/mo-crystal/Pyrite-cpp)
+[Pyrite (Cpp)](https://github.com/mo-crystal/Pyrite-cpp)
