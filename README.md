@@ -48,7 +48,7 @@ func (c *Client) Tell(identifier, body string) (Response, error)
 **报文格式**
 
 ```go
-Sequence (int64)
+Sequence (int32)
 Identifier (string, end with \0)
 Body (bytes)
 ```
