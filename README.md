@@ -2,29 +2,6 @@
 
 ### Struct
 
-**Request**
-
-```go
-type Request struct {
-    Owner       *Server
-    Remote      *net.UDPAddr
-    Session     string
-    SessionData interface{}
-    Body        string
-}
-
-func (r *Request) SetSession(data interface{})
-func (r *Request) DelSession()
-```
-
-**Response**
-
-```go
-type Response struct {
-    Body string
-}
-```
-
 **Server**
 
 ```go
@@ -62,8 +39,6 @@ func (c *Client) DelSession()
 func (c *Client) Tell(identifier, body string) (Response, error)
 ```
 
-### 
-
 ### Process Control
 
 服务机：S
@@ -73,11 +48,9 @@ func (c *Client) Tell(identifier, body string) (Response, error)
 **报文格式**
 
 ```go
-Session
-Identifier
-Sequence
-//空行
-Body
+Sequence (int64)
+Identifier (string, end with \0)
+Body (bytes)
 ```
 
 **握手阶段**
